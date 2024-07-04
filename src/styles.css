@@ -1,17 +1,30 @@
-header {
-  max-width: 1200px;
+body {
+  font-family: "Poppins", sans-serif;
+
+  margin: 0px;
+}
+
+.container {
+  max-width: 1400px;
   margin: 0 auto;
+}
+
+header {
+  max-width: 100%;
+  margin: 0px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("susbridge.jpg");
+    url("images/susbridge.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
   padding: 60px 0;
+  position: relative;
 }
 
 header h1 {
   color: white;
+  font-size: 60px;
 }
 
 header h2 {
@@ -20,23 +33,214 @@ header h2 {
   text-transform: uppercase;
 }
 
+header h3 {
+  text-align: center;
+  color: white;
+}
+
 header p {
   color: white;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 header button {
   padding: 8px 15px;
   border-radius: 4px;
   border: none;
+  background-color: white;
 }
 
-@media (max-width: 800px) {
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.img-responsive {
+  max-width: 100%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.instagram-embeds {
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
+}
+section {
+  max-width: 1200px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+section.secondary {
+  background: #f8f8f8;
+  margin: 0px;
+  position: relative;
+  max-width: 100%;
+  padding: 30px;
+}
+
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  margin-top: 70px;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+  color: #272044;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  color: #272044;
+  opacity: 0.7;
+}
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
+}
+
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("images/footerimg.jpeg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-right: 20px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
   header {
-    padding: 30px 0;
+    padding: 60px 0;
   }
 
   header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
     font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
