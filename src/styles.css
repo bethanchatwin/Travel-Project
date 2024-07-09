@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
   margin: 0px;
 }
@@ -267,5 +267,13 @@ footer a {
 
   .embed {
     aspect-ratio: 16 / 9;
+  }
+  .youtube-embed {
+    margin-bottom: 20px;
+    height: 171px;
+    width: 200px;
+  }
+  .img-responsive {
+    align-content: center;
   }
 }
