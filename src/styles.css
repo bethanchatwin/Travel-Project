@@ -185,6 +185,10 @@ main h5 {
   margin-top: 40px;
 }
 
+.footer-section {
+  margin-bottom: 0;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(
