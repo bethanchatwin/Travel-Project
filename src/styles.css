@@ -235,6 +235,10 @@ footer a {
   opacity: 0.7;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 @media (max-width: 600px) {
   header {
     padding: 60px 0;
@@ -267,6 +271,7 @@ footer a {
 
   .embed {
     aspect-ratio: 16 / 9;
+    width: 100%;
   }
   .youtube-embed {
     margin-bottom: 20px;
@@ -275,5 +280,10 @@ footer a {
   }
   .img-responsive {
     align-content: center;
+  }
+  .instagram-media {
+    max-width: 100% !important;
+    width: 100% !important;
+    min-width: auto !important;
   }
 }
