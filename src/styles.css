@@ -238,6 +238,7 @@ iframe {
     width: 100%;
   }
   .youtube-embed {
+    margin-left: 3px;
   }
   .img-responsive {
     align-content: center;
